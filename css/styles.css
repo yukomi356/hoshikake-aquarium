@@ -1,0 +1,479 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #4a4a4a;
+  line-height: 1.5;
+  background: #fff;
+}
+
+h1,h2,h3,h4 {
+  color: #0d47a0;
+  /* font-weight: normal; */
+  margin: 0;
+  padding: 0;
+  /* font-weight: bold; */
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 18px;
+  text-align: center;
+}
+
+/* p, */a { 
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  padding: 70px 50px;
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.line {
+  background: #0d47a0;
+  width: 55px;
+  height: 1px;
+  margin: 30px auto 60px;
+}
+
+/* ------------------------
+ヘッダー 
+--------------------------- */
+
+header {
+  height: 10vh;
+  background: #0095d9;
+}
+
+header .inner {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header-logo img {
+  width: 240px;
+}
+
+/* header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+} */
+
+header ul {
+  display: flex;
+}
+
+header li {
+  padding: 0 16px;
+}
+
+nav img {
+  width: 36px;
+}
+
+/* 元々考えていたコード */
+
+/* .header {
+  height: 100px;
+  background: #bbdefb;
+  color: #0d47a0;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-between;
+} */
+
+
+/* メインビジュアル */
+.mainvisual {
+  height: 80vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.mainvisual::before {
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.mainvisual h2 {
+  user-select: none;
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  font-weight: normal;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* カラムメニュー */
+.menu {
+  width: auto;
+  height: 10vh;
+  padding: 30px 50px;
+  background: #0095d9;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.menu li + li {
+  border-left: 0;
+  border-right: 1px solid #fff;
+}
+
+.menu a {
+  padding: 24px 36px;
+  border-radius: 8px;
+}
+
+.menu a:hover {
+  background: #ebf6f7;
+  color: #0095d9;
+  opacity: 0.7;
+}
+
+/* お知らせ */
+.news {
+  background: #ebf6f7;
+} 
+
+.inner {
+  text-align: left;
+}
+
+.news ul {
+  margin-bottom: 80px;
+}
+
+.news li {
+  border-bottom: 1px dotted #ccc;
+  padding: 5px 0;
+}
+
+.news li span {
+  margin-right: 30px;
+}
+
+.news li a {
+  color: #4a4a4a;
+}
+
+.news a {
+  color: #fff;
+}
+
+.news-btn {
+  display: block;
+  width: 220px;
+  text-align: center;
+  background-color: #1a76d2;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 10px 0;
+  border: 1px solid #4a4a4a;
+  border-radius: 16px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.7);
+}
+
+.news-btn:hover {
+  opacity: 0.7;
+}
+
+/* 営業時間 */
+
+.business-hours > h3 {
+  display: flex;
+}
+
+/* 営業時間、入館料金共通 */
+/* .business-hours */ .title {
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .business-hours */ h3:nth-of-type(1){
+  padding-left: 30px;
+}
+
+/* .business-hours */ h3:nth-of-type(2){
+  padding-right: 180px;
+}
+
+.table {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.table li {
+  padding-left: 5px 0;
+  padding-bottom: 4px;
+}
+
+.table li .s1{
+  margin-right: 42px;
+}
+
+.table li span {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.table ul:nth-of-type(1) {
+  padding-right: 160px;
+}
+
+.table ul:nth-of-type(2) {
+  padding-left: 50px;
+}
+
+
+.business-hours .text {
+  margin-left: 80px;
+}
+
+/* 入館料金 */
+.admission-fee {
+  background: #ebf6f7;
+}
+
+.admission-fee .table {
+  margin-bottom: 60px;
+}
+
+.admission-fee h3:nth-of-type(2){
+  padding-right: 150px;
+}
+
+.admission-fee li .s1{
+  margin-right: 79px;
+}
+
+.admission-fee .table ul:nth-of-type(2) {
+  padding-left: 105px;
+}
+
+.admission-fee .text {
+  font-size: 24px;
+  color: red;
+  font-weight: bold;
+}
+
+/* イベント */
+.tableArea {
+  margin-bottom: 60px;
+}
+
+/* --- テーブル全体のスタイル指定 --------------- */
+.tableArea {
+  width          : 100%;             /* 100%幅     */
+  border-collapse: collapse;         /* 境界線結合 */
+  border-spacing : 0;                /* 罫線間余白 */
+  font-size      : 10pt;              /* 文字サイズ */
+  background     : #ffffff;          /* テーブル全体の背景色 */
+}
+ /* --- ヘッダーのスタイル指定 ------------------- */
+.tableArea th {
+  text-align    : left;              /* 文字位置   */
+  font-weight   : normal;            /* 普通文字   */
+  padding       : 9px 20px;           /* 余白       */
+  background    : #006888;    
+  color: #fff;       /* 背景色     */
+}
+ /* --- 明細のスタイル指定 ----------------------- */
+.tableArea td {
+  text-align    : left;              /* 文字位置   */
+  padding       : 9px 20px;           /* 余白       */
+}
+ /* --- 明細のｎ行スタイル指定 ------------------- */
+.tableArea tr:nth-child(2n+1) {
+  background    : #f9ffff;           /* 背景色     */
+}
+
+/* 館内案内 */
+.guide {
+  background: #ebf6f7;
+}
+
+.guide h3 {
+  padding: 0;
+}
+
+.midokoro-wrapper img {
+  width: 400px;
+  height: 300px;
+  clip-path: ellipse(50% 46% at 50% 50%);
+  object-fit: cover;
+}
+
+.midokoro-wrapper {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.midokoro-wrapper:last-child {
+  margin-top: 100px;
+  margin-bottom: 160px;
+}
+
+.dolphin-block {
+  width: 400px;
+}
+
+.kurage-block {
+  width: 400px;
+  position: relative;
+  top: 80px;
+}
+
+.night-tour-block {
+  width: 400px;
+}
+
+.right-up-block {
+  width: 400px;
+  position: relative;
+  top: 80px;
+}
+
+.midokoroTxtBlock {
+  text-align: center;
+}
+
+.midokoroTxtBlock .midokoroTxtTtl {
+  font-weight: bold;
+}
+
+/* フロアマップ */
+.map {
+  margin: 60px 0;
+  text-align: center;
+}
+
+/* フッター */
+footer {
+  font-size: 12px;
+  background: #0095d9;
+  color: #fff;
+}
+
+footer > .inner {
+  padding: 30px 50px;
+}
+
+footer .footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer-block:nth-child(2) {
+  margin: 16px 60px;
+}
+
+footer .footer-block > p {
+  margin: 12px;
+}
+
+footer nav {
+  /* padding: 20px 30px; */
+  display: flex;
+}
+
+footer nav li {
+  /* width: 130px; */
+  padding: 3px 16px;
+}
+
+footer nav a {
+  font-size: 12px;
+}
+
+footer nav a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+footer .sns-icon ul {
+  width: 160px;
+  display: flex;
+  position: relative;
+  top: -90px;
+  right: -750px;
+}
+
+footer .sns-icon li {
+  margin: 0 10px;
+}
+
+
+footer .inner > p {
+  margin: 0;
+  text-align: right;
+}
+
+/* footer .sns-icon ul {
+  margin: 0;
+  width: 200px;
+  display: flex;
+} */
