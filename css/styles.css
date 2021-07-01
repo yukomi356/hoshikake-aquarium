@@ -115,6 +115,88 @@ nav img {
   width: 36px;
 }
 
+.overlay {
+  background: rgba(0, 149, 217, 0.95);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  padding: 64px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity .6s;
+}
+
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.overlay #close {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 140px;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.overlay nav {
+  text-align: center;
+}
+
+.overlay ul {
+  text-align: center;
+}
+
+.overlay li {
+  /* width: 50%; */
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity .3s, transform .3s;
+}
+
+.overlay.show li {
+  opacity: 1;
+  transform: none;
+}
+
+.overlay.show li:nth-child(1) {
+  transition-delay: .1s;
+}
+
+.overlay.show li:nth-child(2) {
+  transition-delay: .2s;
+}
+
+.overlay.show li:nth-child(3) {
+  transition-delay: .3s;
+}
+
+.overlay.show li:nth-child(4) {
+  transition-delay: .4s;
+}
+
+.overlay.show li:nth-child(5) {
+  transition-delay: .5s;
+}
+
+.overlay.show li:nth-child(6) {
+  transition-delay: .6s;
+}
+
+.overlay a {
+  width: 40%;
+  margin: 0 auto;
+  display: block;
+  padding: 24px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+}
+
 /* 元々考えていたコード */
 
 /* .header {
@@ -437,12 +519,10 @@ footer .footer-block > p {
 }
 
 footer nav {
-  /* padding: 20px 30px; */
   display: flex;
 }
 
 footer nav li {
-  /* width: 130px; */
   padding: 3px 16px;
 }
 
@@ -472,8 +552,58 @@ footer .inner > p {
   text-align: right;
 }
 
-/* footer .sns-icon ul {
-  margin: 0;
-  width: 200px;
-  display: flex;
-} */
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 599px) {
+  body {
+    width: 100%;
+  }
+
+  .wrap {
+    overflow: hidden;
+  }
+
+  .inner {
+    padding: 50px 30px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  /* header ul li:last-child {
+    visibility: visible;
+  } */
+
+  .mainvisual h2 {
+    width: 260px;
+    padding: 1px;
+    font-size: 32px;
+  }  
+
+  .br-sp::after {
+    content: "\A";
+  }
+
+  span::after {
+    content: "\A";
+  }
+
+  /* .news-btn {
+    width: 120px;
+  } */
+
+  .midokoro-wrapper {
+    flex-direction: column;
+  }
+
+  .map img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .map img {
+    width: 100%;
+  }
+
+}
