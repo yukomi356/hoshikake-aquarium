@@ -90,7 +90,7 @@ header .inner {
 }
 
 .header-logo img {
-  width: 240px;
+  width: 70%;
 }
 
 /* header .inner {
@@ -103,7 +103,7 @@ header .inner {
   margin: 0 auto;
 } */
 
-header ul {
+header .pc-menu {
   display: flex;
 }
 
@@ -113,6 +113,10 @@ header li {
 
 nav img {
   width: 36px;
+}
+
+.sp-menu {
+  display: none;
 }
 
 .overlay {
@@ -323,31 +327,27 @@ nav img {
 }
 
 /* 営業時間 */
-
-.business-hours > h3 {
-  display: flex;
-}
-
-/* 営業時間、入館料金共通 */
-/* .business-hours */ .title {
-  padding-bottom: 8px;
+.business-hours-wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-/* .business-hours */ h3:nth-of-type(1){
-  padding-left: 30px;
+.business-hours-wrapper h3 {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 8px;
 }
 
-/* .business-hours */ h3:nth-of-type(2){
-  padding-right: 180px;
+.business-hours-block {
+  width: 50%;
 }
 
-.table {
-  display: flex;
-  /* justify-content: space-between; */
+.night-tour-hours-block {
+  width: 50%;
 }
 
+/* 営業時間、入館料金共通 */
 .table li {
   padding-left: 5px 0;
   padding-bottom: 4px;
@@ -362,14 +362,6 @@ nav img {
   margin-left: 30px;
 }
 
-.table ul:nth-of-type(1) {
-  padding-right: 160px;
-}
-
-.table ul:nth-of-type(2) {
-  padding-left: 50px;
-}
-
 
 .business-hours .text {
   margin-left: 80px;
@@ -378,6 +370,25 @@ nav img {
 /* 入館料金 */
 .admission-fee {
   background: #ebf6f7;
+}
+
+.fee-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fee-wrapper h3 {
+  text-align: left;
+  margin-left: 30px;
+  margin-bottom: 8px;
+}
+
+.normal-fee {
+  width: 50%;
+}
+
+.night-tour-fee {
+  width: 50%;
 }
 
 .admission-fee .table {
@@ -566,10 +577,35 @@ footer .inner > p {
   .inner {
     padding: 50px 30px;
   }
+  
+  .header-logo img {
+    width: 50%;
+  }
 
-  header ul {
+  header nav {
     display: none;
   }
+
+  .overlay #close {
+    color: #fff;
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    font-size: 50px;
+    cursor: pointer;
+  }
+
+  .overlay a {
+    width: 100%;
+  }
+
+  .sp-menu {
+    display: inline-block;
+  }
+
+  /* .overlay a {
+    width: 90%;
+  } */
 
   /* header ul li:last-child {
     visibility: visible;
@@ -581,20 +617,102 @@ footer .inner > p {
     font-size: 32px;
   }  
 
+  .menu {
+    display: none;
+  }
+
   .br-sp::after {
     content: "\A";
   }
 
-  span::after {
+  .news span::after {
     content: "\A";
+    white-space: pre;
   }
 
-  /* .news-btn {
-    width: 120px;
-  } */
+  .business-hours-wrapper {
+    display: block;
+  }
+
+  .business-hours-wrapper h3 {
+    margin-left: 0;
+}
+
+  .business-hours-block {
+    width: 100%;
+  }
+
+  .table li .s1 {
+    margin-right: 10px;
+  }
+
+  .table li span {
+    margin-left: 0;
+    margin-right: 10px;
+  }
+
+  .business-hours .text {
+    margin-left: 0;
+  }
+
+  .business-hours p {
+    margin: 0 0 64px 0;
+  }
+
+  .night-tour-hours-block {
+    width: 100%;
+  }
+
+  .fee-wrapper {
+    display: block;
+  }
+
+  .fee-wrapper h3 {
+    margin-left: 0;
+}
+
+  .normal-fee {
+    width: 100%;
+  }
+
+  .night-tour-fee {
+    width: 100%;
+  }
+
+  .admission-fee .text {
+    font-size: 16px;
+}
+
+  h3:nth-of-type(1){
+    padding: 0;
+  }
+  
+  h3:nth-of-type(2){
+    padding: 0;
+  }
 
   .midokoro-wrapper {
     flex-direction: column;
+  }
+
+  .midokoro-wrapper img {
+    width: 100%;
+  }
+
+  .dolphin-block {
+    width: 100%;
+  }
+
+  .kurage-block {
+    width: 100%;
+  }
+
+  .night-tour-block {
+    width: 100%;
+  }
+
+  .right-up-block {
+    width: 100%;
   }
 
   .map img {
@@ -604,6 +722,35 @@ footer .inner > p {
 
   .map img {
     width: 100%;
+  }
+
+  footer .footer-wrapper {
+    display: block;
+  }
+
+  footer nav {
+    flex-wrap: wrap;
+  }
+
+  footer .footer-block:nth-child(2) {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .site-nav-link {
+    box-sizing: border-box;
+    max-width: 50%;
+    min-width: 50%;
+    margin-bottom: 10px;
+  }
+
+  footer .sns-icon ul {
+    width: 160px;
+    margin-bottom: 32px;
+    display: flex;
+    position: relative;
+    top: -90px;
+    right: -145px;
   }
 
 }
