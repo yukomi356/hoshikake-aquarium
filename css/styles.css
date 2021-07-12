@@ -587,6 +587,10 @@ footer .inner > p {
     display: none;
   }
 
+  .overlay {
+    padding: 64px 32px;
+  }
+
   .overlay #close {
     color: #fff;
     position: absolute;
@@ -598,6 +602,7 @@ footer .inner > p {
 
   .overlay a {
     width: 100%;
+    padding: 16px;
   }
 
   .sp-menu {
